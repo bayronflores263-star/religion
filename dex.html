@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Ayuda Espiritual</title>
+  <link rel="stylesheet" href="estilo.css"> <!-- CSS externo -->
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>🙏 Bienvenido</h1>
+    <div id="frase-motivadora">
+      <p>"El Señor es mi pastor; nada me faltará." – Salmos 23:1</p>
+    </div>
+  </header>
+
+  <!-- Acciones principales -->
+  <main>
+    <section id="acciones">
+      <button id="btn-biblia">📖 Leer la Biblia Online</button>
+      <button id="btn-iglesias-cercanas">⛪ Iglesias Cercanas</button>
+      <button id="btn-musica">🎵 Escuchar Música Cristiana</button>
+    </section>
+
+    <!-- Buscador de iglesias -->
+    <section id="buscador">
+      <h2>🔎 Buscar una Iglesia</h2>
+      <input type="text" id="ubicacion" placeholder="Ejemplo: Lima, Perú">
+      <button id="btn-buscar-iglesia">Buscar</button>
+    </section>
+
+    <!-- Oración del día -->
+    <section id="oracion">
+      <h2>🌅 Oración del Día</h2>
+      <blockquote>
+        “Señor, dame fuerzas para caminar con fe, paz en medio de las pruebas y gratitud en cada bendición.”
+      </blockquote>
+    </section>
+
+    <!-- Frases motivadoras dinámicas -->
+    <section id="frases">
+      <h2>✨ Frases que fortalecen el alma</h2>
+      <div id="carrusel-frases">
+        <p>"Todo lo puedo en Cristo que me fortalece." – Filipenses 4:13</p>
+        <p>"No temas, porque yo estoy contigo." – Isaías 41:10</p>
+        <p>"Clama a mí y yo te responderé." – Jeremías 33:3</p>
+      </div>
+    </section>
+
+    <!-- Historias de transformación -->
+    <section id="historias" style="display:none;">
+      <h2>🌟 Testimonios de Transformación</h2>
+      <article>
+        <h3>Juan</h3>
+        <p>Dejó las adicciones y hoy sirve como líder en su comunidad cristiana.</p>
+      </article>
+      <article>
+        <h3>María</h3>
+        <p>Encontró paz después de años de ansiedad gracias a la oración constante.</p>
+      </article>
+      <article>
+        <h3>Carlos</h3>
+        <p>Transformó su vida familiar tras reconciliarse con Dios.</p>
+      </article>
+    </section>
+
+    <button id="btn-historias">✨ Ver Historias Inspiradoras</button>
+
+    <!-- Videos de testimonios -->
+    <section id="videos-testimonios">
+      <h2>🎥 Testimonios en Video</h2>
+      <div class="video-container">
+        <iframe width="100%" height="315" src="viideos/ccc.mp4" title="Testimonio 1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+        <iframe width="100%" height="315" src="viideos/videoplayback (2).mp4" title="Testimonio 2" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Videos de prédicas -->
+    <section id="predicas">
+      <h2>📖 Prédicas Inspiradoras</h2>
+      <div class="video-container">
+        <iframe width="100%" height="315" src="viideos/videoplayback (1).mp4" title="Prédica 1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+        <iframe width="100%" height="315" src="viideos/videoplayback (4).mp4" title="Prédica 2" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Vida saludable con Dios -->
+    <section id="vida-saludable">
+      <h2>💪 Vida Saludable de la Mano de Dios</h2>
+      <p>Llevar una vida saludable también es honrar el templo del Espíritu Santo: nuestro cuerpo.</p>
+      <ul>
+        <li>🥗 Mantén una alimentación balanceada, agradeciendo a Dios por los alimentos.</li>
+        <li>🏃‍♂️ Haz ejercicio con alegría, cuida el cuerpo que Dios te dio.</li>
+        <li>😴 Duerme bien, recuerda que el descanso es un regalo divino.</li>
+        <li>🙏 Ora y medita cada día para mantener una mente en paz.</li>
+        <li>📖 Lee pasajes bíblicos que fortalezcan tu espíritu.</li>
+      </ul>
+    </section>
+
+    <!-- Recomendaciones semanales -->
+    <section id="recomendaciones">
+      <h2>🌟 Recomendaciones de la Semana</h2>
+      <article>
+        <h3>✅ Consejo Espiritual</h3>
+        <p>Dedica 10 minutos diarios a la oración silenciosa, dejando tus cargas en manos de Dios.</p>
+      </article>
+      <article>
+        <h3>🍎 Consejo de Salud</h3>
+        <p>Incluye más frutas y verduras en tu dieta como símbolo de la abundancia que Dios provee.</p>
+      </article>
+      <article>
+        <h3>🤝 Consejo Social</h3>
+        <p>Ayuda a alguien en tu comunidad, mostrando el amor de Cristo a través de tus acciones.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 Página de Ayuda Espiritual  - Con amor y fe ✝️
+        Bins Flores
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Botón Biblia
+    document.getElementById("btn-biblia").onclick = function() {
+      window.open("https://www.biblegateway.com/", "_blank");
+    }
+
+    // Botón Iglesias cercanas
+    document.getElementById("btn-iglesias-cercanas").onclick = function() {
+      window.open("https://www.google.com/maps/search/iglesias+cerca+de+mi", "_blank");
+    }
+
+    // Buscador de iglesias
+    document.getElementById("btn-buscar-iglesia").onclick = function() {
+      const lugar = document.getElementById("ubicacion").value;
+      if(lugar.trim() !== "") {
+        window.open(`https://www.google.com/maps/search/iglesias+en+${encodeURIComponent(lugar)}`, "_blank");
+      } else {
+        alert("Por favor ingresa una ubicación.");
+      }
+    }
+
+    // Botón Música cristiana
+    document.getElementById("btn-musica").onclick = function() {
+      window.open("https://www.youtube.com/results?search_query=música+cristiana", "_blank");
+    }
+
+    // Mostrar/ocultar historias
+    document.getElementById("btn-historias").onclick = function() {
+      const div = document.getElementById("historias");
+      div.style.display = (div.style.display === "none") ? "block" : "none";
+    }
+
+    // Carrusel de frases
+    const frases = [
+      '"El Señor es mi pastor; nada me faltará." – Salmos 23:1',
+      '"Todo lo puedo en Cristo que me fortalece." – Filipenses 4:13',
+      '"No temas, porque yo estoy contigo." – Isaías 41:10',
+      '"Clama a mí y yo te responderé." – Jeremías 33:3'
+    ];
+    let index = 0;
+    setInterval(() => {
+      document.getElementById("frase-motivadora").innerHTML = `<p>${frases[index]}</p>`;
+      index = (index + 1) % frases.length;
+    }, 5000);
+  </script>
+</body>
+</html>
+
+
+
